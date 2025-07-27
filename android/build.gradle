@@ -1,9 +1,6 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 34
-    buildToolsVersion "34.0.0"
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 34
@@ -20,6 +17,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.facebook.react:react-native:+'
     implementation 'org.altbeacon:android-beacon-library:2.19.5'
     implementation 'androidx.annotation:annotation:1.7.1'
     implementation 'androidx.core:core:1.13.1'
